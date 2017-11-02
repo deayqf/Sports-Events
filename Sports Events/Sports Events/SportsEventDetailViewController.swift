@@ -21,6 +21,8 @@ class SportsEventDetailViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        self.title = "Event"
 
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium

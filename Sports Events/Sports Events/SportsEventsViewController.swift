@@ -22,6 +22,8 @@ class SportsEventsViewController: UIViewController, UITableViewDelegate, UITable
 
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
+        
+        self.title = "Sports Events"
     }
 
     override func didReceiveMemoryWarning()
