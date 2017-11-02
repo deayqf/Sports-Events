@@ -13,6 +13,14 @@
 		92C22DBE1FAB9D7D000DFB55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C22DBC1FAB9D7D000DFB55 /* LaunchScreen.storyboard */; };
 		92C22DC91FAB9D7E000DFB55 /* Sports_EventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C22DC81FAB9D7E000DFB55 /* Sports_EventsTests.swift */; };
 		92C22DD41FAB9D7E000DFB55 /* Sports_EventsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C22DD31FAB9D7E000DFB55 /* Sports_EventsUITests.swift */; };
+		92C22DE71FABA187000DFB55 /* sports_events.json in Resources */ = {isa = PBXBuildFile; fileRef = 92C22DE61FABA187000DFB55 /* sports_events.json */; };
+		92C22DE91FABA2CA000DFB55 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C22DE81FABA2CA000DFB55 /* Sport.swift */; };
+		92C22DEB1FABA4CA000DFB55 /* SportsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C22DEA1FABA4CA000DFB55 /* SportsEvent.swift */; };
+		92C22DED1FABA6FA000DFB55 /* SportsEventsJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C22DEC1FABA6FA000DFB55 /* SportsEventsJSONParser.swift */; };
+		92C22DEF1FABACD4000DFB55 /* SportsEventsJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C22DEE1FABACD4000DFB55 /* SportsEventsJSONLoader.swift */; };
+		92C22DF11FABB20A000DFB55 /* SportsEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C22DF01FABB20A000DFB55 /* SportsEventsViewController.swift */; };
+		92C22DF31FABB238000DFB55 /* SportsEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C22DF21FABB238000DFB55 /* SportsEventDetailViewController.swift */; };
+		92C22DF51FABBEE8000DFB55 /* SportsEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C22DF41FABBEE8000DFB55 /* SportsEventTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		92C22DCF1FAB9D7E000DFB55 /* Sports EventsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sports EventsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C22DD31FAB9D7E000DFB55 /* Sports_EventsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sports_EventsUITests.swift; sourceTree = "<group>"; };
 		92C22DD51FAB9D7E000DFB55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92C22DE61FABA187000DFB55 /* sports_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sports_events.json; sourceTree = "<group>"; };
+		92C22DE81FABA2CA000DFB55 /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
+		92C22DEA1FABA4CA000DFB55 /* SportsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEvent.swift; sourceTree = "<group>"; };
+		92C22DEC1FABA6FA000DFB55 /* SportsEventsJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEventsJSONParser.swift; sourceTree = "<group>"; };
+		92C22DEE1FABACD4000DFB55 /* SportsEventsJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEventsJSONLoader.swift; sourceTree = "<group>"; };
+		92C22DF01FABB20A000DFB55 /* SportsEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEventsViewController.swift; sourceTree = "<group>"; };
+		92C22DF21FABB238000DFB55 /* SportsEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEventDetailViewController.swift; sourceTree = "<group>"; };
+		92C22DF41FABBEE8000DFB55 /* SportsEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEventTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +111,15 @@
 		92C22DB21FAB9D7D000DFB55 /* Sports Events */ = {
 			isa = PBXGroup;
 			children = (
+				92C22DE11FABA04F000DFB55 /* Model */,
 				92C22DB31FAB9D7D000DFB55 /* AppDelegate.swift */,
 				92C22DB71FAB9D7D000DFB55 /* Main.storyboard */,
 				92C22DBA1FAB9D7D000DFB55 /* Assets.xcassets */,
 				92C22DBC1FAB9D7D000DFB55 /* LaunchScreen.storyboard */,
 				92C22DBF1FAB9D7D000DFB55 /* Info.plist */,
+				92C22DF01FABB20A000DFB55 /* SportsEventsViewController.swift */,
+				92C22DF21FABB238000DFB55 /* SportsEventDetailViewController.swift */,
+				92C22DF41FABBEE8000DFB55 /* SportsEventTableViewCell.swift */,
 			);
 			path = "Sports Events";
 			sourceTree = "<group>";
@@ -120,6 +140,18 @@
 				92C22DD51FAB9D7E000DFB55 /* Info.plist */,
 			);
 			path = "Sports EventsUITests";
+			sourceTree = "<group>";
+		};
+		92C22DE11FABA04F000DFB55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92C22DE61FABA187000DFB55 /* sports_events.json */,
+				92C22DE81FABA2CA000DFB55 /* Sport.swift */,
+				92C22DEA1FABA4CA000DFB55 /* SportsEvent.swift */,
+				92C22DEC1FABA6FA000DFB55 /* SportsEventsJSONParser.swift */,
+				92C22DEE1FABACD4000DFB55 /* SportsEventsJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C22DBE1FAB9D7D000DFB55 /* LaunchScreen.storyboard in Resources */,
+				92C22DE71FABA187000DFB55 /* sports_events.json in Resources */,
 				92C22DBB1FAB9D7D000DFB55 /* Assets.xcassets in Resources */,
 				92C22DB91FAB9D7D000DFB55 /* Main.storyboard in Resources */,
 			);
@@ -256,7 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C22DF31FABB238000DFB55 /* SportsEventDetailViewController.swift in Sources */,
+				92C22DF51FABBEE8000DFB55 /* SportsEventTableViewCell.swift in Sources */,
+				92C22DE91FABA2CA000DFB55 /* Sport.swift in Sources */,
 				92C22DB41FAB9D7D000DFB55 /* AppDelegate.swift in Sources */,
+				92C22DED1FABA6FA000DFB55 /* SportsEventsJSONParser.swift in Sources */,
+				92C22DEF1FABACD4000DFB55 /* SportsEventsJSONLoader.swift in Sources */,
+				92C22DF11FABB20A000DFB55 /* SportsEventsViewController.swift in Sources */,
+				92C22DEB1FABA4CA000DFB55 /* SportsEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
